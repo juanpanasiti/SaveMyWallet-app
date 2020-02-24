@@ -1,4 +1,4 @@
-package com.giosoft.savemywallet.base
+package com.giosoft.savemywallet.presentation.base
 
 import android.os.Bundle
 import android.view.WindowManager
