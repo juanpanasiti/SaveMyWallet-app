@@ -1,4 +1,4 @@
-package com.giosoft.savemywallet.ui.login
+package com.giosoft.savemywallet.presentation.login
 
 import android.app.Activity
 import android.content.Intent
@@ -6,8 +6,10 @@ import android.os.Bundle
 import com.firebase.ui.auth.AuthUI
 import com.firebase.ui.auth.IdpResponse
 import com.giosoft.savemywallet.R
-import com.giosoft.savemywallet.base.FullScreenBaseActivity
-import com.giosoft.savemywallet.ui.main.MainActivity
+import com.giosoft.savemywallet.domain.auth.LoginInteractor
+import com.giosoft.savemywallet.presentation.base.FullScreenBaseActivity
+import com.giosoft.savemywallet.presentation.main.MainActivity
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : FullScreenBaseActivity() {
@@ -19,7 +21,20 @@ class LoginActivity : FullScreenBaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        checkIfSignIn()
         signInWithProvider()
+    }
+
+    private fun checkIfSignIn() {
+        val interactor = LoginInteractor()
+        if( interactor.isUserLogedIn()){
+            val name:String = FirebaseAuth.getInstance().currentUser?.displayName.toString()
+            toast(this,"Bienvenido $name")
+            this.navigateToMain()
+            finish()
+        }else{
+            toast(this,"Tienes que iniciar sesión. Muchas gracias")
+        }
     }
 
     override fun getLayout(): Int {
@@ -50,7 +65,7 @@ class LoginActivity : FullScreenBaseActivity() {
                 // Successfully signed in
                 navigateToMain()
             } else {
-                this.showError("Error al logear con google: ${response!!.error!!.errorCode}")
+                this.showError("Error al logear con google: ${response?.error.toString()}")
             }
         }
     }//onActivityResult()
