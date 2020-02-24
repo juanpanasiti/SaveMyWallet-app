@@ -1,4 +1,4 @@
-package com.giosoft.savemywallet.ui.main.slideshow
+package com.giosoft.savemywallet.presentation.main.slideshow
 
 import android.os.Bundle
 import android.view.LayoutInflater

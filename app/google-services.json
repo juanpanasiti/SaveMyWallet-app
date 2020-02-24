@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "67786626960",
+    "firebase_url": "https://savemywallet-b9ebd.firebaseio.com",
+    "project_id": "savemywallet-b9ebd",
+    "storage_bucket": "savemywallet-b9ebd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67786626960:android:1114cf478c477abec00515",
+        "android_client_info": {
+          "package_name": "com.giosoft.savemywallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "67786626960-ue5h6j3uvnm36dfm4nhukpk5e1dfa4dn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.giosoft.savemywallet",
+            "certificate_hash": "fe307290b1e147fdb266102ed8042aa1abd6c44a"
+          }
+        },
+        {
+          "client_id": "67786626960-k9tp3gkm4a56okbdo8k4s7gmud1ev9rh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.giosoft.savemywallet",
+            "certificate_hash": "757f27b781ffbc793c8e2d03e33c84b94542b68b"
+          }
+        },
+        {
+          "client_id": "67786626960-vtg4mu36a68bf4kfb815rdot1u70c3lg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtP-j7tWb5VkJk1AfHzeRdj6CJCh2iZEM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "67786626960-vtg4mu36a68bf4kfb815rdot1u70c3lg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

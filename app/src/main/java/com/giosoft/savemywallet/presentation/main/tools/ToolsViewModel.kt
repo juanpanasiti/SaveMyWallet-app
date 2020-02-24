@@ -1,4 +1,4 @@
-package com.giosoft.savemywallet.ui.main.tools
+package com.giosoft.savemywallet.presentation.main.tools
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

@@ -1,4 +1,4 @@
-package com.giosoft.savemywallet.ui.main
+package com.giosoft.savemywallet.presentation.main
 
 import android.os.Bundle
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -13,7 +13,7 @@ import com.google.android.material.navigation.NavigationView
 import androidx.appcompat.widget.Toolbar
 import android.view.Menu
 import com.giosoft.savemywallet.R
-import com.giosoft.savemywallet.base.BaseActivity
+import com.giosoft.savemywallet.presentation.base.BaseActivity
 
 class MainActivity : BaseActivity() {
 

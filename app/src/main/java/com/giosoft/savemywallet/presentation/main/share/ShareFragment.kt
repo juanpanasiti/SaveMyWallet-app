@@ -1,4 +1,4 @@
-package com.giosoft.savemywallet.ui.main.share
+package com.giosoft.savemywallet.presentation.main.share
 
 import android.os.Bundle
 import android.view.LayoutInflater
